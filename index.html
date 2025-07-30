@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Escape the Minefield</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="welcome-screen">
+    <h1>Escape The Mine</h1>
+    <h3>By Shayan Ali</h3>
+    <button id="playBtn">Play</button>
+  </div>
+
+  <div id="controlHintPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+      <h2>Controls</h2>
+      <p>💻 Use arrow keys on PC to move and space to detect mines<br> 📱 Use Arrow Keys to move for Mobile and Double-tap to detect mines.</p>
+      <button id="hintOkBtn">Okay</button>
+    </div>
+  </div>
+
+  <div id="game" style="display: none;">
+    <div id="touch-cursor"></div>
+    <div id="player"></div>
+    <div id="hud">
+      <span id="timer">Time: 0</span>
+      <span id="stars">Stars: 0</span>
+      <span id="bestTime">Best: --</span>
+      <div id="levelDisplay">Level: 1</div>
+    </div>
+    <button id="restartBtn" style="display: none;">Restart</button>
+    <button id="nextLevelBtn" style="display: none;">Next Level</button>
+    <div id="mobile-controls">
+      <div class="dpad">
+        <button id="upBtn">▲</button>
+        <div>
+          <button id="leftBtn">◀</button>
+          <button id="downBtn">▼</button>
+          <button id="rightBtn">▶</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="function.js"></script>
+</body>
+</html>
